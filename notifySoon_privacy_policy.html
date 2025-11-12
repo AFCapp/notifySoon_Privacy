@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — NotifySoon</title>
+  <style>
+    :root{--bg:#ffffff;--text:#111827;--muted:#6b7280;--accent:#0f172a}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;line-height:1.6;color:var(--text);background:var(--bg);padding:28px}
+    .container{max-width:900px;margin:0 auto}
+    h1,h2,h3{color:var(--accent);margin-top:1.2rem}
+    p{margin:0.6rem 0}
+    ul{margin:0.4rem 0 0.8rem 1.2rem}
+    table{width:100%;border-collapse:collapse;margin-top:0.6rem}
+    th,td{border:1px solid #e6e7ea;padding:8px;text-align:left}
+    .muted{color:var(--muted)}
+    .contact{background:#f8fafc;padding:12px;border-radius:8px}
+    .small{font-size:0.95rem;color:var(--muted)}
+    pre{white-space:pre-wrap;background:#f3f4f6;padding:12px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for <strong>NotifySoon</strong></h1>
+    <p class="small"><strong>Last Updated:</strong> November 8, 2024</p>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>Welcome to NotifySoon. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
+      <div class="contact">
+        <p><strong>Developer Contact Information:</strong></p>
+        <p>Email: <a href="mailto:afcapps2022@gmail.com">afcapps2022@gmail.com</a><br>WhatsApp: <a href="tel:+918660507747">+91 8660507747</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <h3>1.1 Information You Provide to Us</h3>
+      <h4>Account Information (Optional):</h4>
+      <p>When you sign in with Google, we collect your name, email address, and profile picture from your Google account. You can use the app without signing in; all features work offline with local storage.</p>
+
+      <h4>Warranty Information:</h4>
+      <ul>
+        <li>Product name, brand, and category</li>
+        <li>Owner name</li>
+        <li>Purchase date, price, and retailer name</li>
+        <li>Warranty duration and expiration dates</li>
+        <li>Serial numbers and model information</li>
+        <li>Custom notes and fields</li>
+        <li>Photos of warranty documents and receipts</li>
+      </ul>
+
+      <h4>Vehicle Service Information:</h4>
+      <ul>
+        <li>Vehicle owner name, brand, model, and year</li>
+        <li>Registration number, engine number, and chassis number</li>
+        <li>Insurance expiry date</li>
+        <li>Service history including dates, odometer readings, service center details</li>
+        <li>Service center contact information</li>
+        <li>Service notes and reminders</li>
+      </ul>
+
+      <h4>Documents and Images:</h4>
+      <ul>
+        <li>Photos captured via camera or selected from your device gallery</li>
+        <li>Scanned warranty documents and receipts</li>
+        <li>Text extracted from images using on-device OCR technology</li>
+      </ul>
+
+      <h3>1.2 Information Collected Automatically</h3>
+      <h4>Device Information:</h4>
+      <ul>
+        <li>Device type and model information</li>
+        <li>Operating system version</li>
+        <li>Unique device identifiers (for push notifications only)</li>
+        <li>Network connectivity status</li>
+      </ul>
+
+      <h4>Firebase Cloud Messaging (FCM) Tokens:</h4>
+      <p>We collect FCM tokens to send you warranty expiration and service reminder notifications.</p>
+    </section>
+
+    <section>
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li><strong>Provide Core Functionality:</strong> Store and manage your warranty and vehicle service records</li>
+        <li><strong>Send Reminders:</strong> Deliver push notifications for upcoming warranty expirations and vehicle service dates (1, 7, 15, 20, 30 days before)</li>
+        <li><strong>Cloud Backup:</strong> Enable optional backup and restore of your data to your personal Google Drive</li>
+        <li><strong>Document Scanning:</strong> Process images locally using on-device OCR to extract warranty information</li>
+        <li><strong>Authentication:</strong> Verify your identity when using Google Sign-In for cloud features</li>
+        <li><strong>App Improvement:</strong> Understand network connectivity to provide offline functionality</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Data Storage and Security</h2>
+
+      <h3>3.1 Local Storage</h3>
+      <ul>
+        <li><strong>Primary Storage:</strong> All your warranty and vehicle data is stored locally on your device using secure AsyncStorage</li>
+        <li><strong>Documents:</strong> Images and documents are stored in your device's local file system</li>
+        <li><strong>Offline Access:</strong> Your data is always available offline; internet is only required for Google Drive backup and Google Sign-In</li>
+      </ul>
+
+      <h3>3.2 Cloud Storage (Optional)</h3>
+      <ul>
+        <li><strong>Google Drive Backup:</strong> When you choose to backup data, it is stored in your personal Google Drive account in a private app-specific folder (appDataFolder)</li>
+        <li><strong>User Control:</strong> You control when to backup and restore individual items</li>
+        <li><strong>Data Format:</strong> Backups are stored as JSON files with naming format: <code>{name}{field}{itemId}_{date}_{timestamp}.json</code></li>
+        <li><strong>Privacy:</strong> Backup data remains in your personal Google Drive account and is not accessible to us</li>
+      </ul>
+
+      <h3>3.3 Firebase Services</h3>
+      <p><strong>Limited Use:</strong> We only use Firebase Firestore to store FCM tokens for push notification delivery</p>
+      <p><strong>No Comprehensive Tracking:</strong> We do not store your warranty or vehicle data on our servers</p>
+
+      <h3>3.4 Security Measures</h3>
+      <ul>
+        <li>Local data is stored using AsyncStorage (standard mobile storage)</li>
+        <li>Google Drive backups are protected by your Google account security (use strong passwords and two-factor authentication)</li>
+        <li>We do not implement custom encryption for local storage</li>
+        <li>No data is transmitted to our servers beyond Firebase notification tokens</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p>We use the following third-party services:</p>
+
+      <h3>4.1 Google Services</h3>
+      <h4>Google Sign-In:</h4>
+      <p><strong>Purpose:</strong> Optional authentication to enable cloud backup features<br>
+      <strong>Data Shared:</strong> Name, email address, profile picture<br>
+      <strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+      <h4>Google Drive API:</h4>
+      <p><strong>Purpose:</strong> Optional cloud backup to your personal Google Drive<br>
+      <strong>Permissions:</strong> Access to app-created files in your Drive's private appDataFolder<br>
+      <strong>Scopes Used:</strong>
+      <ul>
+        <li><code>https://www.googleapis.com/auth/drive.file</code> - Access files created by the app</li>
+        <li><code>https://www.googleapis.com/auth/drive.appdata</code> - Access app's private folder</li>
+      </ul>
+      <strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+      <h3>4.2 Firebase Services (Google)</h3>
+      <ul>
+        <li><strong>Firebase Authentication:</strong> Manage Google Sign-In sessions — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+        <li><strong>Firebase Cloud Messaging:</strong> Deliver push notifications for warranty and service reminders — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+        <li><strong>Firebase Firestore:</strong> Store FCM tokens for notification delivery only — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+      </ul>
+
+      <h3>4.3 ML Kit (Google)</h3>
+      <p><strong>ML Kit Text Recognition:</strong> On-device OCR for scanning warranty documents. Processing happens locally on your device; images and extracted text are not sent to external servers. <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+
+      <h3>4.4 Other Services</h3>
+      <ul>
+        <li><strong>Notifee:</strong> Local notification scheduling (reminders) — <a href="https://notifee.app/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+        <li><strong>React Native NetInfo:</strong> Check internet connectivity status — on-device only</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Data Sharing and Disclosure</h2>
+
+      <h3>5.1 We Do NOT:</h3>
+      <ul>
+        <li>Sell, rent, or trade your personal information to third parties</li>
+        <li>Use analytics or tracking services to monitor your behavior</li>
+        <li>Share your data with advertisers or marketers</li>
+        <li>Display advertisements in the app</li>
+        <li>Upload your warranty or vehicle data to our servers</li>
+      </ul>
+
+      <h3>5.2 We May Share Information:</h3>
+      <p><strong>With Your Consent:</strong> When you authorize backup to Google Drive, data is stored in your personal Google account</p>
+      <p><strong>With Service Providers:</strong> Google Firebase for push notification delivery (FCM tokens only); Google ML Kit for on-device OCR processing (no external transmission)</p>
+      <p><strong>Legal Requirements:</strong> If required by law, court order, or governmental authority; to protect our rights, property, or safety</p>
+    </section>
+
+    <section>
+      <h2>6. Your Privacy Rights and Choices</h2>
+
+      <h3>6.1 Access and Control</h3>
+      <ul>
+        <li><strong>View Your Data:</strong> All your data is stored locally on your device and accessible within the app</li>
+        <li><strong>Edit or Delete:</strong> You can edit or delete any warranty or vehicle record at any time</li>
+        <li><strong>Export Data:</strong> You can backup your data to your Google Drive</li>
+        <li><strong>Account Deletion:</strong> You can sign out from Google Sign-In at any time; this removes cloud sync but retains local data</li>
+      </ul>
+
+      <h3>6.2 Permissions Control</h3>
+      <p>You can control app permissions through your device settings:</p>
+      <p><strong>Android:</strong> Camera (required for document scanning), Storage (required to save and access documents), Notifications (required for warranty reminders), Internet (required for Google Sign-In and Drive backup)</p>
+      <p><strong>iOS:</strong> Camera (required for document scanning), Photos (required to select existing images), Notifications (required for warranty reminders)</p>
+      <p>You can revoke these permissions, but some app features may not function properly.</p>
+
+      <h3>6.3 Opt-Out Options</h3>
+      <ul>
+        <li><strong>Google Sign-In:</strong> You can use the app without signing in (skip login)</li>
+        <li><strong>Cloud Backup:</strong> Backup to Google Drive is entirely optional</li>
+        <li><strong>Notifications:</strong> You can disable push notifications in your device settings</li>
+        <li><strong>OCR Scanning:</strong> You can manually enter warranty information instead of using camera scanning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Data Retention</h2>
+      <ul>
+        <li><strong>Local Data:</strong> Remains on your device until you manually delete it or uninstall the app</li>
+        <li><strong>Google Drive Backups:</strong> Remain in your Google Drive until you delete them</li>
+        <li><strong>FCM Tokens:</strong> Stored in Firebase Firestore and remain until you sign out or uninstall the app</li>
+        <li><strong>Account Data:</strong> Google Sign-In data is managed by Google's retention policies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Children's Privacy</h2>
+      <p>Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:afcapps2022@gmail.com">afcapps2022@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>9. International Data Transfers</h2>
+      <p>If you are located outside of India and choose to use our app: your information may be transferred to and processed by Google services in various countries. Google Firebase and Google Drive services may store data in multiple regions. By using the app, you consent to the transfer of your information to these regions.</p>
+    </section>
+
+    <section>
+      <h2>10. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy and displaying a notice in the app (for material changes). We encourage you to review this Privacy Policy periodically for any changes.</p>
+    </section>
+
+    <!-- Sections 11 and 12 removed as requested -->
+
+    <section>
+      <h2>13. Third-Party Links</h2>
+      <p>Our app may contain links to third-party websites or services (such as our terms of service or contact methods). We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies.</p>
+    </section>
+
+    <section>
+      <h2>14. Security Disclaimer</h2>
+      <p>While we implement reasonable security measures: no method of electronic storage is 100% secure. We cannot guarantee absolute security of your information. You are responsible for maintaining the security of your device and Google account. Use strong passwords and enable two-factor authentication on your Google account.</p>
+    </section>
+
+    <section>
+      <h2>15. Analytics and Tracking</h2>
+      <p><strong>We Do NOT Use:</strong> Google Analytics, Firebase Analytics, Facebook SDK, Crashlytics or crash reporting tools, any advertising or tracking SDKs, cookies or similar tracking technologies. Your usage of the app is private and not monitored.</p>
+    </section>
+
+    <section>
+      <h2>16. Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+      <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:afcapps2022@gmail.com">afcapps2022@gmail.com</a><br>
+        <strong>WhatsApp:</strong> <a href="tel:+918660507747">+91 8660507747</a><br>
+        <strong>Developer:</strong> AfcApps</p>
+        <p class="small">We will respond to your inquiry within 30 days.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>17. Data Processing Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Collection Method</th>
+            <th>Storage Location</th>
+            <th>Third-Party Sharing</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Info (Name, Email)</td>
+            <td>Google Sign-In (Optional)</td>
+            <td>Google account, in-memory</td>
+            <td>Google only</td>
+            <td>Authentication, cloud sync</td>
+          </tr>
+          <tr>
+            <td>Warranty Records</td>
+            <td>User input</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Core app functionality</td>
+          </tr>
+          <tr>
+            <td>Vehicle Records</td>
+            <td>User input</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Core app functionality</td>
+          </tr>
+          <tr>
+            <td>Documents/Images</td>
+            <td>Camera/Gallery</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Warranty documentation</td>
+          </tr>
+          <tr>
+            <td>FCM Tokens</td>
+            <td>Firebase SDK</td>
+            <td>Firebase Firestore</td>
+            <td>Google Firebase only</td>
+            <td>Push notifications</td>
+          </tr>
+          <tr>
+            <td>Device Info</td>
+            <td>Device APIs</td>
+            <td>In-memory</td>
+            <td>None</td>
+            <td>App functionality</td>
+          </tr>
+          <tr>
+            <td>OCR Text</td>
+            <td>ML Kit (on-device)</td>
+            <td>Local device storage</td>
+            <td>None (processed locally)</td>
+            <td>Document scanning</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>18. Your Consent</h2>
+      <p>By using NotifySoon, you consent to this Privacy Policy and agree to its terms.</p>
+      <p class="small"><strong>Effective Date:</strong> November 8, 2024<br><strong>Version:</strong> 1.0</p>
+    </section>
+
+    <p class="small muted">This Privacy Policy is written in clear, plain language to ensure transparency. If you have difficulty understanding any section, please contact us for clarification.</p>
+  </div>
+</body>
+</html>
