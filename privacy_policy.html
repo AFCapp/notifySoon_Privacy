@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy Policy — SWsync</title>
+  <style>
+    :root{--bg:#ffffff;--text:#111827;--muted:#6b7280;--accent:#0f172a}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;line-height:1.6;color:var(--text);background:var(--bg);padding:28px}
+    .container{max-width:900px;margin:0 auto}
+    h1,h2,h3{color:var(--accent);margin-top:1.2rem}
+    p{margin:0.6rem 0}
+    ul{margin:0.4rem 0 0.8rem 1.2rem}
+    table{width:100%;border-collapse:collapse;margin-top:0.6rem}
+    th,td{border:1px solid #e6e7ea;padding:8px;text-align:left}
+    .muted{color:var(--muted)}
+    .contact{background:#f8fafc;padding:12px;border-radius:8px}
+    .small{font-size:0.95rem;color:var(--muted)}
+    pre{white-space:pre-wrap;background:#f3f4f6;padding:12px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy for <strong>SWsync</strong></h1>
+    <p class="small"><strong>Last Updated:</strong> December 24, 2025</p>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>Welcome to SWsync. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
+      <div class="contact">
+        <p><strong>Developer Contact Information:</strong></p>
+        <p>Email: <a href="mailto:afcapps2022@gmail.com">afcapps2022@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <h3>1.1 Information You Provide to Us</h3>
+      <h4>Account Information (Optional):</h4>
+      <p>When you sign in with Google, we collect your name, email address, and profile picture from your Google account. You can use the app without signing in; all features work offline with local storage.</p>
+
+      <h4>Warranty Information:</h4>
+      <ul>
+        <li>Product name, brand, and owner name</li>
+        <li>Purchase date, price, and retailer name</li>
+        <li>Warranty duration and expiration dates</li>
+        <li>Serial numbers</li>
+        <li>Custom notes</li>
+        <li>Photos of warranty documents and receipts</li>
+      </ul>
+
+      <h4>Vehicle Service Information:</h4>
+      <ul>
+        <li>Vehicle owner name, brand, model, and year of manufacture</li>
+        <li>Registration number, engine number, and chassis number</li>
+        <li>Service history including dates, odometer readings, service center details</li>
+        <li>Service center contact information and service costs</li>
+        <li>Service notes and next service dates</li>
+      </ul>
+
+      <h4>Documents and Images:</h4>
+      <ul>
+        <li>Photos captured via camera or selected from your device gallery</li>
+        <li>Scanned warranty documents and receipts</li>
+        <li>Text extracted from images using on-device OCR technology (Google ML Kit)</li>
+      </ul>
+
+      <h3>1.2 Information Collected Automatically</h3>
+      <h4>Device Information:</h4>
+      <ul>
+        <li>Device type and model information</li>
+        <li>Operating system version</li>
+        <li>Unique device identifiers (for push notifications only)</li>
+      </ul>
+
+      <h4>Notification Tokens:</h4>
+      <p>We collect notification tokens to send you warranty expiration and service reminder notifications locally on your device.</p>
+    </section>
+
+    <section>
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li><strong>Provide Core Functionality:</strong> Store and manage your warranty and vehicle service records</li>
+        <li><strong>Send Reminders:</strong> Deliver local notifications for upcoming warranty expirations and vehicle service dates (1, 7, 15, 20, 30 days before)</li>
+        <li><strong>Cloud Backup:</strong> Enable optional backup and restore of your data to your personal Google Drive</li>
+        <li><strong>Document Scanning:</strong> Process images locally using on-device OCR (Google ML Kit) to extract warranty information</li>
+        <li><strong>Authentication:</strong> Verify your identity when using Google Sign-In for cloud features</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Data Storage and Security</h2>
+
+      <h3>3.1 Local Storage</h3>
+      <ul>
+        <li><strong>Primary Storage:</strong> All your warranty and vehicle data is stored locally on your device using secure AsyncStorage</li>
+        <li><strong>Documents:</strong> Images and documents are stored in your device's local file system</li>
+        <li><strong>Offline Access:</strong> Your data is always available offline; internet is only required for Google Drive backup and Google Sign-In</li>
+      </ul>
+
+      <h3>3.2 Cloud Storage (Optional)</h3>
+      <ul>
+        <li><strong>Google Drive Backup:</strong> When you choose to backup data, it is stored in your personal Google Drive account in a private app-specific folder (appDataFolder)</li>
+        <li><strong>User Control:</strong> You control when to backup and restore individual items</li>
+        <li><strong>Data Format:</strong> Backups are stored as JSON files with naming format: <code>{name}{field}{itemId}_{date}_{timestamp}.json</code></li>
+        <li><strong>Privacy:</strong> Backup data remains in your personal Google Drive account and is not accessible to us</li>
+      </ul>
+
+      <h3>3.3 Security Measures</h3>
+      <ul>
+        <li>Local data is stored using AsyncStorage (standard mobile storage)</li>
+        <li>Google Drive backups are protected by your Google account security (use strong passwords and two-factor authentication)</li>
+        <li>We do not implement custom encryption for local storage</li>
+        <li>No data is transmitted to our servers; all processing happens locally on your device</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Third-Party Services</h2>
+      <p>We use the following third-party services:</p>
+
+      <h3>4.1 Google Services</h3>
+      <h4>Google Sign-In:</h4>
+      <p><strong>Purpose:</strong> Optional authentication to enable cloud backup features<br>
+      <strong>Data Shared:</strong> Name, email address, profile picture<br>
+      <strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+      <h4>Google Drive API:</h4>
+      <p><strong>Purpose:</strong> Optional cloud backup to your personal Google Drive<br>
+      <strong>Permissions:</strong> Access to app-created files in your Drive's private appDataFolder<br>
+      <strong>Scopes Used:</strong>
+      <ul>
+        <li><code>https://www.googleapis.com/auth/drive.file</code> - Access files created by the app</li>
+        <li><code>https://www.googleapis.com/auth/drive.appdata</code> - Access app's private folder</li>
+      </ul>
+      <strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a></p>
+
+      <h3>4.2 ML Kit (Google)</h3>
+      <p><strong>ML Kit Text Recognition:</strong> On-device OCR for scanning warranty documents. Processing happens locally on your device; images and extracted text are not sent to external servers. <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">Privacy Policy</a></p>
+
+      <h3>4.3 Other Services</h3>
+      <ul>
+        <li><strong>Notifee:</strong> Local notification scheduling for warranty and service reminders — <a href="https://notifee.app/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+        <li><strong>React Native Clipboard:</strong> Copy text to clipboard — on-device only</li>
+        <li><strong>React Native Image Picker:</strong> Access camera and photo gallery — on-device only</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. Data Sharing and Disclosure</h2>
+
+      <h3>5.1 We Do NOT:</h3>
+      <ul>
+        <li>Sell, rent, or trade your personal information to third parties</li>
+        <li>Use analytics or tracking services to monitor your behavior</li>
+        <li>Share your data with advertisers or marketers</li>
+        <li>Display advertisements in the app</li>
+        <li>Upload your warranty or vehicle data to our servers</li>
+      </ul>
+
+      <h3>5.2 We May Share Information:</h3>
+      <p><strong>With Your Consent:</strong> When you authorize backup to Google Drive, data is stored in your personal Google account</p>
+      <p><strong>With Service Providers:</strong> Google ML Kit for on-device OCR processing (no external transmission); Google Drive API for optional backup functionality</p>
+      <p><strong>Legal Requirements:</strong> If required by law, court order, or governmental authority; to protect our rights, property, or safety</p>
+    </section>
+
+    <section>
+      <h2>6. Permissions Required</h2>
+      <p>SWsync requires the following permissions:</p>
+
+      <h3>6.1 Camera Permission (android.permission.CAMERA)</h3>
+      <ul>
+        <li><strong>Purpose:</strong> To allow you to take photos of warranty cards, bills, and documents for scanning</li>
+        <li><strong>Usage:</strong> Used only when you tap "Take Photo" in the document scanner</li>
+        <li><strong>Data Storage:</strong> Photos are processed locally using Google ML Kit OCR and stored on your device</li>
+      </ul>
+
+      <h3>6.2 Storage/Photo Library Access</h3>
+      <ul>
+        <li><strong>Purpose:</strong> To allow you to select existing photos from your gallery for document scanning</li>
+        <li><strong>Usage:</strong> Used only when you tap "From Gallery" in the document scanner</li>
+      </ul>
+
+      <h3>6.3 Notification Permission</h3>
+      <ul>
+        <li><strong>Purpose:</strong> To send you local reminder notifications for warranty expiries and upcoming vehicle services</li>
+        <li><strong>Usage:</strong> Notifications are scheduled locally on your device (1, 7, 15, 20, and 30 days before expiry/service dates)</li>
+      </ul>
+
+      <h3>6.4 Internet Access</h3>
+      <ul>
+        <li><strong>Purpose:</strong> Only used for Google Drive integration (backup and restore features) and Google Sign-In</li>
+        <li><strong>Usage:</strong> Only when you explicitly use the backup, restore, or sign-in features</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Your Privacy Rights and Choices</h2>
+
+      <h3>7.1 Access and Control</h3>
+      <ul>
+        <li><strong>View Your Data:</strong> All your data is stored locally on your device and accessible within the app</li>
+        <li><strong>Edit or Delete:</strong> You can edit or delete any warranty or vehicle record at any time</li>
+        <li><strong>Export Data:</strong> You can backup your data to your Google Drive</li>
+        <li><strong>Account Deletion:</strong> You can sign out from Google Sign-In at any time; this removes cloud sync but retains local data</li>
+      </ul>
+
+      <h3>7.2 Permissions Control</h3>
+      <p>You can control app permissions through your device settings:</p>
+      <p><strong>Android:</strong> Settings > Apps > SWsync > Permissions</p>
+      <p><strong>iOS:</strong> Settings > SWsync > Permissions</p>
+      <p>You can revoke these permissions, but some app features may not function properly.</p>
+
+      <h3>7.3 Opt-Out Options</h3>
+      <ul>
+        <li><strong>Google Sign-In:</strong> You can use the app without signing in (skip login)</li>
+        <li><strong>Cloud Backup:</strong> Backup to Google Drive is entirely optional</li>
+        <li><strong>Notifications:</strong> You can disable push notifications in your device settings</li>
+        <li><strong>OCR Scanning:</strong> You can manually enter warranty information instead of using camera scanning</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Data Retention</h2>
+      <ul>
+        <li><strong>Local Data:</strong> Remains on your device until you manually delete it or uninstall the app</li>
+        <li><strong>Google Drive Backups:</strong> Remain in your Google Drive until you delete them</li>
+        <li><strong>Account Data:</strong> Google Sign-In data is managed by Google's retention policies</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Children's Privacy</h2>
+      <p>Our app is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+    </section>
+
+    <section>
+      <h2>10. International Data Transfers</h2>
+      <p>If you are located outside of your country and choose to use our app: your information may be transferred to and processed by Google services in various countries. Google Drive services may store data in multiple regions. By using the app, you consent to the transfer of your information to these regions.</p>
+    </section>
+
+    <section>
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. We encourage you to review this Privacy Policy periodically for any changes.</p>
+    </section>
+
+    <section>
+      <h2>12. Security Disclaimer</h2>
+      <p>While we implement reasonable security measures: no method of electronic storage is 100% secure. We cannot guarantee absolute security of your information. You are responsible for maintaining the security of your device and Google account. Use strong passwords and enable two-factor authentication on your Google account.</p>
+    </section>
+
+    <section>
+      <h2>13. Analytics and Tracking</h2>
+      <p><strong>We Do NOT Use:</strong> Google Analytics, Firebase Analytics, Facebook SDK, Crashlytics or crash reporting tools, any advertising or tracking SDKs, cookies or similar tracking technologies. Your usage of the app is private and not monitored.</p>
+    </section>
+
+    <section>
+      <h2>14. Contact Us</h2>
+      <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+      <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:afcapps2022@gmail.com">afcapps2022@gmail.com</a><br>
+        <strong>Developer:</strong> Harshith</p>
+        <p class="small">We will respond to your inquiry within 30 days.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>15. Data Processing Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Collection Method</th>
+            <th>Storage Location</th>
+            <th>Third-Party Sharing</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Account Info (Name, Email)</td>
+            <td>Google Sign-In (Optional)</td>
+            <td>Google account, in-memory</td>
+            <td>Google only</td>
+            <td>Authentication, cloud sync</td>
+          </tr>
+          <tr>
+            <td>Warranty Records</td>
+            <td>User input</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Core app functionality</td>
+          </tr>
+          <tr>
+            <td>Vehicle Records</td>
+            <td>User input</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Core app functionality</td>
+          </tr>
+          <tr>
+            <td>Documents/Images</td>
+            <td>Camera/Gallery</td>
+            <td>Local device storage</td>
+            <td>None (optional: your Google Drive)</td>
+            <td>Warranty documentation</td>
+          </tr>
+          <tr>
+            <td>OCR Text</td>
+            <td>ML Kit (on-device)</td>
+            <td>Local device storage</td>
+            <td>None (processed locally)</td>
+            <td>Document scanning</td>
+          </tr>
+          <tr>
+            <td>Notification Data</td>
+            <td>User-created reminders</td>
+            <td>Local device storage</td>
+            <td>None</td>
+            <td>Local notifications</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>16. Your Consent</h2>
+      <p>By using SWsync, you consent to this Privacy Policy and agree to its terms.</p>
+      <p class="small"><strong>Effective Date:</strong> December 24, 2025<br><strong>Version:</strong> 1.0</p>
+    </section>
+
+    <p class="small muted">This Privacy Policy is written in clear, plain language to ensure transparency. If you have difficulty understanding any section, please contact us for clarification.</p>
+  </div>
+</body>
+</html>
